@@ -1,0 +1,80 @@
+html {
+  height: 100%;
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+}
+
+.page-container {
+  display: flex;
+
+  height: 100%;
+  width: 100%;
+  background-color: black;
+
+  .left-container {
+    display: flex;
+    flex-direction: column;
+    background-color: navy;
+    margin: 20px 0;
+    overflow-y: auto;
+    .top-content {
+      color: white;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid white;
+    }
+    .bottom-content {
+      color: white;
+      padding: 0 5vw 0 8vw;
+
+      .students {
+        width: 6vw;
+        .student-wrapper {
+          margin-bottom: 5px;
+          font-size: 1.5vw;
+
+          .plus-btn {
+            color: white;
+            background-color: red;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+          }
+
+          .minus-btn {
+            color: black;
+            background-color: rgb(99, 214, 58);
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .right-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    .name-header {
+      h1 {
+        font-size: 6vw;
+      }
+    }
+    .random-student-btn {
+      background-color: navy;
+      color: white;
+      padding: 1.3vw 8vw;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
